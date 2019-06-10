@@ -7,8 +7,8 @@ import org.springframework.shell.standard.{ShellComponent, ShellMethod}
 @SpringBootApplication
 class DemoShellApplication
 
-object DemoApplication {
-  def main(args: Array[String]): Unit = SpringApplication.run(classOf[DemoShellApplication], args: _ *)
+object DemoShellApplication extends App {
+  SpringApplication.run(classOf[DemoShellApplication])
 }
 
 @ShellComponent class MyCommands {
